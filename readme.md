@@ -1,7 +1,7 @@
 ﻿What is Userfunc_en VBA?
 =====================
 
-Userfunc_ru VBA is add-in for Microsoft Office Excel. Contains subroutines and functions for automating routine tasks of editing and checking tables, invoices and other business documentation.
+Userfunc_en VBA is english version add-in for Microsoft Office Excel. Contains subroutines and functions for automating routine tasks of editing and checking tables, invoices and other business documentation.
 
 How to install?
 ---------------
