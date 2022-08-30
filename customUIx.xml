@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon startFromScratch="false">
+    <tabs>
+      <tab id="UserFunctionsTab1" label="Macros" insertBeforeQ="TabAddIns" visible="true">
+        <group id="GROUP_CELL_FORMAT" label="Cell Format" imageMso="ListMacros" autoScale="false">
+          <menu id="MENU_FORMAT" imageMso="GroupControlFormatting" size="large" label="Format change">
+            <button id="ValueToText" label="Value2Text" imageMso="DataTypeText" onAction="ValueToText" visible="true" screentip="Value to text" supertip="Cell format change to the text" />
+            <button id="ValueToGeneral" label="Value2General" imageMso="DataTypeGeneral" onAction="ValueToGeneral" visible="true" screentip="Value to general" supertip="Cell format change to the general"></button>
+            <button id="ValueToFormula" label="Value2formula" imageMso="DataTypeCalculatedColumn" onAction="ValueToFormula" visible="true" screentip="Value to formula" supertip="Convert cell to formula with setting cell format to the main" />
+            <button id="FormulaAsText" label="Formula as text" imageMso="ShowFormulas" onAction="FormulaAsText" visible="true" screentip="Formula as text" supertip="Convert cell format to the text" />
+            <button id="FormulaAsTextInt" label="Formula as text (int)" imageMso="ShowFormulas" onAction="FormulaAsTextInt" visible="true" screentip="Formula as text (international format)" supertip="Convert cell formula as text with the representaion function name in international format" />
+            <button id="MakeLocalAddress" label="Address2Local" imageMso="MacroRelativeReferences" onAction="MakeLocalAddress" visible="true" screentip="Address to local format" supertip="Convert external links inside the formulas into local addresses" />
+          </menu>
+          <menu id="MENU_COLOR" label="Cell color" imageMso="AppointmentColorDialog" size="large">
+            <button id="HighlightBlankCells" label="Highlight blank cells" imageMso="AppointmentColorDialog" onAction="HighlightBlankCells" visible="true" screentip="Highlight blank cells" supertip="Sets color 8 for empty cells background" />
+            <button id="HighlightCellsWithFormulasReturningVoid" label="Highlight cells with blank values" imageMso="AppointmentColorDialog" onAction="HighlightCellsWithFormulasReturningVoid" visible="true" screentip="Highlight cells with blank values" supertip="Sets color 8 for cells contained formulas that return empty values" />
+            <button id="CellColor" label="Cell color" imageMso="ColorMenu" onAction="CellColor" visible="true" screentip="Cell color" supertip="The display in the pop-up window of the font color and filling the selected cell" />
+            <button id="ConditionalFormattingColor" label="Conditional formatting color" imageMso="ConditionalFormattingMenu" onAction="ConditionalFormattingColor" visible="true" screentip="Conditional formatting color" supertip="Displays in a pop-up window text and background color from conditional formatting rule applied to the cell" />
+          </menu>
+          <button id="ResetColumnWidth" label="Reset column" imageMso="CellWidth" onAction="ResetColumnWidth" visible="true" screentip="Reset column" supertip="Reset column width by default value" />
+          <button id="ResetNoteSize" label="Reset comments" imageMso="PageScaleToFitScale" onAction="ResetNoteSize" visible="true" screentip="Reset comments" supertip="Reset the size of cell comment by default values" />
+          <button id="UpdateCell" label="Update cell" imageMso="EastAsianEditingMarks" onAction="UpdateCell" visible="true" screentip="Update cell" supertip="Auto reentering formula into cell" />
+          <button id="FillCells1" showLabel="false" image="FillColorYellow" label="Fill color 1" onAction="FillCells" visible="true" screentip="Fill color 1" supertip="Filling selected cells with color 1" tag="Fill color 1" />
+          <button id="FillCells2" showLabel="false" image="FillColorOrange" label="Fill color 2" onAction="FillCells" visible="true" screentip="Fill color 2" supertip="Filling selected cells with color 2" tag="Fill color 2" />
+          <button id="FillCells6" showLabel="false" image="FillColorRed" label="Fill color 6" onAction="FillCells" visible="true" screentip="Fill color 6" supertip="Filling selected cells with color 6" tag="Fill color 6" />
+          <button id="FillCells3" showLabel="false" image="FillColorLightGreen" label="Fill color 3" onAction="FillCells" visible="true" screentip="Fill color 3" supertip="Filling selected cells with color 3" tag="Fill color 3" />
+          <button id="FillCells4" showLabel="false" image="FillColorGreen" label="Fill color 4" onAction="FillCells" visible="true" screentip="Fill color 4" supertip="Filling selected cells with color 4" tag="Fill color 4" />
+          <button id="FillCells5" showLabel="false" image="FillColorLightBlue" label="Fill color 5" onAction="FillCells" visible="true" screentip="Fill color 5" supertip="Filling selected cells with color 7" tag="Fill color 5" />
+          <button id="FillCells7" showLabel="false" image="FillColorDarkRed" label="Fill color 7" onAction="FillCells" visible="true" screentip="Fill color 7" supertip="Filling selected cells with color 7" tag="Fill color 7" />
+          <button id="FillCells8" showLabel="false" image="FillColorLightPurple" label="Fill color 8" onAction="FillCells" visible="true" screentip="Fill color 8" supertip="Filling selected cells with color 8" tag="Fill color 8" />
+          <button id="FillCells9" showLabel="false" image="FillNoColor" label="Fill color 9" onAction="FillCells" visible="true" screentip="Fill color 9" supertip="Filling selected cells with color 9" tag="Fill color 9" />
+        </group>
+        <group id="COPY_AND_PASTE_GROUP" label="Copy and paste" imageMso="ListMacros" autoScale="false">
+          <button id="TextToClipboard" label="Text" imageMso="Copy" onAction="TextToClipboard" visible="true" screentip="Text to clipboard" supertip="Copy text value from cell into the clipboard" />
+          <button id="TextToClipboardSeparatorSelection" label="Copy dialog" imageMso="Copy" onAction="TextToClipboardSeparatorSelection" visible="true" screentip="Copies text from cells range with delimiter selection." supertip="Coping text from selected cells into the clipboard and concatenating values with using a user-specified text delimiter"></button>
+          <button id="NumToClipboard" label="Number" imageMso="Copy" onAction="NumToClipboard" visible="true" screentip="Number to clipboard" supertip="Copy numerical value from cell to clipboard" />
+          <menu id="MENU_SPECIAL_COPYING" imageMso="CopyMenu" size="large" label="Special Copy">
+            <button id="TextToClipboardDialog" label="Display text" imageMso="Copy" onAction="TextToClipboardDialog" visible="true" screentip="Display cell text and copy to clipboard" supertip="Copy text value from cell into the clipboard with showing text into pop-up window" />
+            <button id="FormulaToClipboard" label="Formula" imageMso="Copy" onAction="FormulaToClipboard" visible="true" screentip="Formula to clipboard (international format)" supertip="Copy formula from cell to clipboard in international format" />
+            <button id="LocalFormulaToClipboard" label="Formula (local)" imageMso="Copy" onAction="LocalFormulaToClipboard" visible="true" screentip="Local formula to clipboard" supertip="Copy formula from cell to clipboard in local format. In case of cells range, formulas combined using tabulation symbol as text delimiter." />
+            <button id="RangeAddressToClipboard" label="Range address" imageMso="Copy" onAction="RangeAddressToClipboard" visible="true" screentip="Range address to clipboard" supertip="Copy range address to clipboard" />
+            <button id="CellAddressToClipboard" label="Cell address" imageMso="Copy" onAction="CellAddressToClipboard" visible="true" screentip="Cell address to clipboard" supertip="Copy cell address to clipboard. In case of cells range, cells addresses combined using ; synmbol" />
+            <button id="FilledCellAdressToClipboard" label="Not empty cell address" imageMso="Copy" onAction="FilledCellAdressToClipboard" visible="true" screentip="Not empty cell address to clipboard" supertip="Copy not empty cell address to clipboard. In case of cells range, cells addresses combined using ; synmbol." />
+          </menu>
+          <button id="PasteClipboard" size="large" label="Paste from clipboard" imageMso="PasteTextOnly" onAction="PasteClipboard" visible="true" screentip="Paste from clipboard" supertip="Paste value into cell from clipboard" />
+          <menu id="MENU_SPECIAL_PASTE" imageMso="PasteAllRules" size="large" label="Special paste">
+            <button id="PastePrefixClipboard" label="Prefix" image="AddPrefixToCell" onAction="PastePrefixClipboard" visible="true" screentip="Paste prefix from clipboard" supertip="Paste value into begin of cell text from clipboard" />
+            <button id="PasteSuffixClipboard" label="Suffix" image="AddSuffixToCell" onAction="PasteSuffixClipboard" visible="true" screentip="Paste suffix from clipboard" supertip="Paste value into end of cell text from clipboard" />
+            <button id="WrapSquareBrackets" label="Wrap into []" image="WrapTextSquareBrackets" onAction="WrapSquareBrackets" visible="true" screentip="Wrap into square brackets" supertip="Wrap cell value into square brackets" />
+          </menu>
+        </group>
+        <group id="GROUP_TEXT" label="Text" imageMso="PhoneticGuideEdit" autoScale="false">
+          <menu id="MENU_EDIT_TEXT" imageMso="EditText" size="large" label="Text editing">
+            <button id="TrimSpaces" label="Trim spaces" imageMso="SparklineClearSelected" onAction="TrimSpaces" visible="true" screentip="Trim spaces" supertip="Removing leading, trailing and double spaces into the cell text" />
+            <button id="SpecialsSymbols" label="Strip whitespace" imageMso="EraserMenu" onAction="SpecialsSymbols" visible="true" screentip="Strip whitespace" supertip="Strip whitespace (or other non-printed characters) from text in cell" />
+            <button id="ReplaceWithRegExp" label="Replace" image="RegExp" onAction="ReplaceWithRegExp" visible="true" screentip="Replace using regular expression" supertip="Text replace with regular expression" />
+            <button id="ExtractWithRegExp" label="Extract" image="RegExp" onAction="ExtractWithRegExp" visible="true" screentip="Extract using regular expression" supertip="Text extract using regular expression" />
+          </menu>
+          <button id="Uppercase" label="Uppercase" imageMso="EquationNormalText" onAction="Uppercase" visible="true" screentip="Text to uppercase" supertip="Convert cell text to uppercase" />
+          <button id="Lowercase" label="Lowercase" imageMso="TextAllCaps" onAction="Lowercase" visible="true" screentip="Text to lowercase" supertip="Convert cell text to lowercase" />
+          <button id="UcFirst" label="Sentence case" imageMso="TextSmallCaps" onAction="UcFirst" visible="true" screentip="Sentence case" supertip="Convert cell text to sentence case" />
+        </group>
+        <group id="GROUP_TABLE" label="Tables" imageMso="AutoFormatDialog" autoScale="false">
+          <menu id="MENU_ROWS_TABLES" imageMso="GroupTableRowsAndColumns" size="large" label="Actions">
+            <button id="DuplicateCurrentRow" label="Duplicate" imageMso="PasteDuplicate" onAction="DuplicateCurrentRow" visible="true" screentip="Row duplicate" supertip="Duplicate the current table row" />
+            <button id="DeleteEvenRows" label="Even remove" imageMso="TableRowsDeleteExcel" onAction="DeleteEvenRows" visible="true" screentip="Remove even lines" supertip="Deletes even lines in the selected range" />
+            <button id="SwapCells" label="Swap cells" imageMso="PowerQueryAppendQuery" onAction="SwapCells" visible="true" screentip="Swapping selected ranges" supertip="Swaps ranges. It is necessary to select two areas (ranges) of the same size using the Ctrl key and run this procedure" />
+            <button id="ReverseOrderList" label="In reverse" imageMso="ReverseSort" onAction="ReverseOrderList" visible="true" screentip="Reverse order list" supertip="Rearranges list elements in reverse order" />
+            <button id="EditSmartTableRowInDlgWnd" label="Row edit" imageMso="EnableInlineEdit" onAction="EditSmartTableRowInDlgWnd" visible="true" screentip="Table row edit" supertip="Table row edit in dialog" />
+          </menu>
+          <menu id="MENU_SPECIAL_GROUPING" imageMso="MergeOrSplitCells" size="large" label="Grouping">
+            <button id="MergeCellsAndText" label="Merge with text" imageMso="MergeCells" onAction="MergeCellsAndText" visible="true" screentip="Merge with text" supertip="Groupping selected cells with combined their values using user-defined delimiter" />
+            <button id="MergeByGroups" label="Merge groups" image="MergeCellsByGroups" onAction="MergeByGroups" visible="true" screentip="Merge cells by groups" supertip="Separate groupping several selected ranges" />
+            <button id="UngroupAndFillCells" label="Ungroup with replication" image="UnmeregeCellsAndDuplicateValue" onAction="UngroupAndFillCells" visible="true" screentip="Ungroup with replication" supertip="Ungroup with replication common text by cells" />
+          </menu>
+          <menu id="MENU_BLANK_ROWS" imageMso="GroupTableStylesExcel" size="large" label="Blank rows">
+            <button id="SelectBlankRows" label="Select" imageMso="GroupTableLayout" onAction="SelectBlankRows" visible="true" screentip="Select blank rows" supertip="Select empty rows in a table" />
+            <button id="DeleteBlankRows" label="Remove" imageMso="DeleteRows" onAction="DeleteBlankRows" visible="true" screentip="Remove blank rows" supertip="Remove empty rows from table" />
+            <button id="HideBlankRows" label="Hide" imageMso="RowsHideTouch" onAction="HideBlankRows" visible="true" screentip="Hide blank rows" supertip="Hide empty rows in a table" />
+            <button id="DuplicateBlankRows" label="Duplicate" imageMso="ShapeSheetInsertSection" onAction="DuplicateBlankRows" visible="true" screentip="Duplicate blank rows" supertip="Duplicate empty rows in a table" />
+          </menu>
+          <menu id="MENU_WORK_WITH_TABLES" imageMso="AdpDiagramAddTable" size="large" label="Smart tables">
+            <button id="CompareColumnsWithConditionalFormatting" label="Compare rows" imageMso="ConditionalFormattingHighlightCompareColumns" onAction="CompareColumnsWithConditionalFormatting" visible="true" screentip="Compare rows" supertip="Applies conditional formatting rules to two selected ranges for compare them" />
+          </menu>
+        </group>
+        <group id="GROUP_MATHS" label="Maths" image="MathFunctions" autoScale="true">
+          <menu id="MENU_DIVIDING" imageMso="DivisionSign" size="large" label="Fast division">
+            <button id="DevideValueBy10" label="VAL/10" image="xDiv10" onAction="DevideValueBy10" visible="true" screentip="Devides by 10" supertip="Deviding cell value by 10" />
+            <button id="DevideValueBy100" label="VAL/100" image="xDiv100" onAction="DevideValueBy100" visible="true" screentip="Devides by 100" supertip="Deviding cell value by 100" />
+            <button id="DevideValueBy1000" label="VAL/1000" image="xDiv1000" onAction="DevideValueBy1000" visible="true" screentip="Devides by 1000" supertip="Deviding cell value by 1000" />
+          </menu>
+          <menu id="MENU_DIVIDING_BY_FORMULA" imageMso="DivisionSign" size="large" label="Quick divide by formula">
+            <button id="DivideBy10AsFormula" label="=VAL/10" image="fxDiv10" onAction="DivideBy10AsFormula" visible="true" screentip="Divide by 10 by formula" supertip="Deviding value from selected cell by 10 with save the result as a formula" />
+            <button id="DivideBy100AsFormula" label="=VAL/100" image="fxDiv100" onAction="DivideBy100AsFormula" visible="true" screentip="Divide by 100 by formula" supertip="Deviding value from selected cell by 100 with save the result as a formula" />
+            <button id="DivideBy1000AsFormula" label="=VAL/1000" image="fxDiv1000" onAction="DivideBy1000AsFormula" visible="true" screentip="Divide by 1000 by formula" supertip="Deviding value from selected cell by 1000 with save the result as a formula" />
+          </menu>
+          <menu id="MENU_FORMULA_EDIT" image="FormulaEdit" size="large" label="Formula edit">
+            <button id="DelLastDivisor" label="Remove last divider" image="RemoveLastDivider" onAction="DelLastDivisor" visible="true" screentip="Remove last divider" supertip="Remove last divider from formula" />
+            <button id="DelLastMultiplier" label="Removing last multiplier " image="RemoveLastMultiplier" onAction="DelLastMultiplier" visible="true" screentip="Removing last multiplier " supertip="Removing the last multiplier from the formula in the cell" />
+            <button id="IncreaseRoundPrecision" label="Increase round precision" imageMso="DecimalsIncrease" onAction="IncreaseRoundPrecision" visible="true" screentip="Increase round precision" supertip="Increase round precision by one digit into ROUND() formula"></button>
+            <button id="DecreaseRoundPrecision" label="Decrease round precision" imageMso="DecimalsDecrease" onAction="DecreaseRoundPrecision" visible="true" screentip="Decrease round precision" supertip="Decrease round precision by one digit into ROUND() formula" />
+          </menu>
+          <menu id="MENU_WRAP" imageMso="MatchBrace" size="large" label="Wrapping">
+            <button id="WrapSum" label="Wrap cell into SUM()" imageMso="AutoSum" onAction="WrapSum" visible="true" screentip="Wrap cell into SUM()" supertip="Wrap cell calcalated value into SUM() formula" />
+            <button id="WrapRound" label="Wrap cel into ROUND()" image="AddFormulaMathRound" onAction="WrapRound" visible="true" screentip="Wrap cel into ROUND()" supertip="Wrap cell calcalated value into ROUND() formula" />
+          </menu>
+          <button id="Median" label="Median" imageMso="M" onAction="Median" visible="true" screentip="Select cells with median values" supertip="Selection in a range of cells with median values using setting their background to color 8 from Excel palette" />
+          <button id="MedianByColumns" label="Median by columns" imageMso="ConditionalFormattingNewRule" onAction="MedianByColumns" visible="true" screentip="Median by columns" supertip="Application conditional formatting rule to the selected table columns for selection table rows contained median values" />
+          <button id="Divisors" label="Divisors" image="Divisors" onAction="Divisors" visible="true" screentip="Determining number divisors" supertip="Displayed divisors of numerical value from selected cell" />
+        </group>
+        <group id="GROUP_WORKBOOKS_AND_SHEETS" label="Workbooks and sheets" imageMso="UpgradeWorkbook" autoScale="true">
+          <button id="MergeWorkbooks" label="Merges workbooks" imageMso="PrintPreviewShrinkOnePage" onAction="MergeWorkbooks" visible="true" screentip="Merges workbooks" supertip="Merges several workbooks into one workbook" />
+          <button id="RemoveHiddenNames" label="Removes hidden names" imageMso="GroupRemoveHiddenInformation" onAction="RemoveHiddenNames" visible="true" screentip="Removes hidden names" supertip="Removes hidden names from current workbook" />
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+  <contextMenus>
+    <contextMenu idMso="ContextMenuListRange">
+      <menu id="CellsAllInsertOperation1" label="Add cells" imageMso="CellsInsertSmart" insertBeforeMso="Cut">
+        <button idMso="TableRowsInsertAboveExcel" visible="true" />
+        <button idMso="TableRowsInsertBelowExcel" visible="true" />
+        <button idMso="TableColumnsInsertLeftExcel" visible="true" />
+        <button idMso="TableColumnsInsertRightExcel" visible="true" />
+        <menuSeparator id="MSeparator1" />
+        <button idMso="SheetRowsInsert" visible="true" />
+        <button idMso="SheetColumnsInsert" visible="true" />
+        <menuSeparator id="MSeparator2" />
+        <button idMso="CellsInsertDialog" visible="true" />
+        <button idMso="CellsInsertSmart" visible="true" />
+      </menu>
+      <menu id="CellsAllDeleteOperation1" label="Remove cells" imageMso="CellsDeleteSmart" insertBeforeMso="Cut">
+        <button idMso="TableRowsDeleteExcel" visible="true" />
+        <button idMso="TableColumnsDeleteExcel" visible="true" />
+        <menuSeparator id="MSeparator3" />
+        <button idMso="SheetRowsDelete" visible="true" />
+        <button idMso="SheetColumnsDelete" visible="true" />
+        <menuSeparator id="MSeparator4" />
+        <button idMso="CellsDelete" visible="true" />
+        <button idMso="CellsDeleteSmart" visible="true" />
+      </menu>
+    </contextMenu>
+    <contextMenu idMso="ContextMenuCell">
+      <menu id="CellsAllInsertOperation2" label="Add cells" insertBeforeMso="Cut">
+        <button idMso="SheetRowsInsert" visible="true" />
+        <button idMso="SheetColumnsInsert" visible="true" />
+        <menuSeparator id="MSeparator5" />
+        <button idMso="CellsInsertDialog" visible="true" />
+        <button idMso="CellsInsertSmart" visible="true" />
+      </menu>
+      <menu id="CellsAllDeleteOperation2" label="Remove cells" imageMso="CellsDeleteSmart" insertBeforeMso="Cut">
+        <button idMso="SheetRowsDelete" visible="true" />
+        <button idMso="SheetColumnsDelete" visible="true" />
+        <menuSeparator id="MSeparator6" />
+        <button idMso="CellsDelete" visible="true" />
+        <button idMso="CellsDeleteSmart" visible="true" />
+      </menu>
+    </contextMenu>
+  </contextMenus>
+</customUI>

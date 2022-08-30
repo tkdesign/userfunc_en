@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+	<Relationship Id="UnmeregeCellsAndDuplicateValue" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/UnmeregeCellsAndDuplicateValue.png"/>
+	<Relationship Id="xDiv100" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/xDiv100.png"/>
+	<Relationship Id="fxDiv100" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/fxDiv100.png"/>
+	<Relationship Id="fxDiv1000" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/fxDiv1000.png"/>
+	<Relationship Id="FillColorLightGreen" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorLightGreen.png"/>
+	<Relationship Id="WorkBooksCombine" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/WorkBooksCombine.png"/>
+	<Relationship Id="RemoveLastMultiplier" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/RemoveLastMultiplier.png"/>
+	<Relationship Id="AddFormulaMathRound" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/AddFormulaMathRound.png"/>
+	<Relationship Id="FillColorLightPurple" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorLightPurple.png"/>
+	<Relationship Id="MergeCellsByGroups" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/MergeCellsByGroups.png"/>
+	<Relationship Id="FormulaEdit" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FormulaEdit.png"/>
+	<Relationship Id="RemoveLastDivider" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/RemoveLastDivider.png"/>
+	<Relationship Id="fxDiv10" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/fxDiv10.png"/>
+	<Relationship Id="FillColorRed" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorRed.png"/>
+	<Relationship Id="xDiv1000" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/xDiv1000.png"/>
+	<Relationship Id="FillColorOrange" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorOrange.png"/>
+	<Relationship Id="AddRowNumIntoCommentWithForm" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/AddRowNumIntoCommentWithForm.png"/>
+	<Relationship Id="Divisors" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/Divisors.png"/>
+	<Relationship Id="FillColorYellow" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorYellow.png"/>
+	<Relationship Id="FillColorLightBlue" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorLightBlue.png"/>
+	<Relationship Id="FillNoColor" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillNoColor.png"/>
+	<Relationship Id="AddPrefixToCell" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/AddPrefixToCell.png"/>
+	<Relationship Id="AddSuffixToCell" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/AddSuffixToCell.png"/>
+	<Relationship Id="NamedRangesToSmartTables" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/NamedRangesToSmartTables.png"/>
+	<Relationship Id="AddRowNumIntoCommentWithoutForm" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/AddRowNumIntoCommentWithoutForm.png"/>
+	<Relationship Id="MathFunctions" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/MathFunctions.png"/>
+	<Relationship Id="RegExp" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/RegExp.png"/>
+	<Relationship Id="WrapTextSquareBrackets" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/WrapTextSquareBrackets.png"/>
+	<Relationship Id="FillColorDarkRed" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorDarkRed.png"/>
+	<Relationship Id="xDiv10" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/xDiv10.png"/>
+	<Relationship Id="FillColorGreen" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="images/FillColorGreen.png"/>
+</Relationships>
